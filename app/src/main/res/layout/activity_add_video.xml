@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#D8D8D8"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddVideoActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:inputType="textPersonName|textCapSentences"
+        android:id="@+id/edt"
+        android:textColor="@color/black"
+        android:hint="Enter the title"
+        />
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/edt"
+        android:id="@+id/video"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/video"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#00B175"
+        android:text="UPLOAD video"
+        android:textColor="@color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnLibrary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_video_library_24"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp" />
+
+</RelativeLayout>
